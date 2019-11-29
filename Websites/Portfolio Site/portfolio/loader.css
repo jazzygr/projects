@@ -1,0 +1,54 @@
+/* ================================= 
+        ANIMATION Styles
+==================================== */
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: rotate 3s linear infinite;
+}
+
+
+.circle {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #fdc52c;
+    margin: 0.1rem;
+    transform: scale(0);
+    animation: grow 1.5s linear infinite;
+}
+
+
+.circle:nth-child(1) {
+    background-color: black;
+    animation-delay: 0.8s;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes grow {
+    50% {
+        transform: scale(1);
+    }
+}
+
+/* ================================= 
+        TITLE Styles
+==================================== */
+
+#load {
+    margin-right: 6.4rem;
+    padding-bottom: 0.5rem;
+}
+
+#ing {
+    margin-left: 6.9rem;
+}

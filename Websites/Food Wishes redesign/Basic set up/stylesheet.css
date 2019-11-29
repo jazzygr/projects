@@ -1,0 +1,251 @@
+/* ================================= 
+Base Styles
+==================================== */
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    
+    
+}
+
+body{
+    background-color: #fff;
+}
+
+p{
+    font-weight: 800;
+}
+
+ul, h1, h2, h3,h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+a:hover{
+    color: lightseagreen;
+}
+
+.wrapper{
+    width: 90%;
+    margin: auto;
+}
+
+.title-1{
+    display: inline-block;
+    text-transform: lowercase;
+    color: rgb(103, 51, 128);
+}
+
+.title-2{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    margin-left: 1rem;
+    color: rgb(78, 78, 78);
+}
+
+/* ================================= 
+Styles
+==================================== */
+
+/* ================================= 
+            SUBSCRIBER BAR
+==================================== */
+
+#subscribe{
+    min-height: 25vh;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: lightcoral;
+    margin-bottom: 3rem;
+}
+
+.subtext a{
+    display: block;
+}
+
+
+.subforms{
+    padding: 1rem;
+}
+
+/* ================================= 
+            SECTION A
+==================================== */
+
+.section-a{
+    border-bottom: 1px solid rgba(218, 214, 214, 0.541);
+    margin-bottom: 3rem;
+}
+
+.search-form{
+    margin-bottom: 3rem;
+}
+
+
+
+/* ================================= 
+            SECTION B
+==================================== */
+
+.article{
+    margin: 3rem 0;
+    border-bottom: 1px solid rgba(218, 214, 214, 0.541);
+}
+
+.art-title {
+    font-size: 1.4rem;
+    display: inline;
+    color: rgb(103, 51, 128);
+}
+
+.article-img, .card-img, .about-me-img, .blog-list-img{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.date{
+    font-size: 0.8em;
+    color: rgb(78, 78, 78);
+    margin: 0.5rem 0;
+}
+
+.art-title{
+    text-align: center;
+}
+
+.art-links{
+    display: block;
+    margin: 1rem 0;
+}
+
+.comment{
+    font-size: 0.8em;
+}
+
+/* ================================= 
+            SECTION C
+==================================== */
+
+.card-a, .card-b, .card-c{
+    text-align: center;
+    position: relative;
+
+}
+
+.card-caption{
+    position: relative;
+    border-bottom: 1px solid rgba(218, 214, 214, 0.541);
+    bottom: 3rem;
+    padding: 1rem 0;
+    background-color: rgb(103, 51, 128);
+}
+
+
+
+
+/* ABOUT ME SECTION */
+
+.about-me-container{
+    background-color: rgba(218, 214, 214, 0.541);
+    padding: 1rem;
+    border-bottom: 1px solid rgba(218, 214, 214, 0.541);
+    margin-bottom: 3rem;
+}
+
+.about-me-img{
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+
+/* ================================= 
+\         Section D
+==================================== */
+
+.section-d{
+    width: 70%;
+    margin: auto;
+    border-bottom: 1px solid rgba(218, 214, 214, 0.541);
+    
+}
+
+.blog-list li{
+    padding: 1rem;
+    text-align: center;
+    margin: 0.2rem auto;
+    width: 100%;
+    background-image: url();
+    background-repeat: repeat;
+}
+
+.blog-list-img{
+    max-height: 100vh;
+    display: block;
+    margin: 1rem 0;
+}
+
+.side-nav h5{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* ================================= 
+Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+    .section-a, 
+    .row {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .tagline{
+        font-size: 1.4em;
+    }
+    
+    .section-a, .main-nav, .socials {
+        display: flex;
+    }
+    
+    
+}
+
+
+@media (min-width: 1025px) {
+    .section-a {
+        width: 90%;
+        max-width: 1150px;
+        justify-content: space-between;
+    }
+
+    #grid-c{
+        display: flex; 
+    }    
+
+    .card{
+    }
+
+    .about-me{
+
+    }
+    
+ 
+    
+}
+
