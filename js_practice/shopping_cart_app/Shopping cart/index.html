@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+    <script src="script.js" async></script>
     <title>Shopping Cart Practice</title>
 </head>
 <body>
@@ -33,7 +34,7 @@
                     
                     <div class="price-bar">
                         <h5 class="price">£9.99</h5>
-                        <button class="add-to-cart btn">Add To Cart</button>
+                        <button class="add-to-cart btn" type="button">Add To Cart</button>
                     </div>
                 </div>
             </div>
@@ -70,72 +71,48 @@
         
         <div class="section-c" id="grid">
             
-            <div class="cart">
-                <h2>CART</h2>
-                
-                <div class="cart-table">
-                    
-                    <div class="item-item column">
-                        <h5 class="underscore">ITEM</h5>
-                        <div class="purchased-item">
-                            <img src="https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="img" srcset="" class="purchased-item-avatar">
-                            <h6 class="avatar-title">Album 1</h6>
-                        </div>
-                        
-                        <div class="purchased-item">
-                            <img src="https://images.pexels.com/photos/1181776/pexels-photo-1181776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="img" srcset="" class="purchased-item-avatar">
-                            <h6 class="avatar-title">Album 2</h6>
-                        </div>
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="https://images.pexels.com/photos/167092/pexels-photo-167092.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="100" height="100">
+                        <span class="cart-item-title">Album 1</span>
                     </div>
-                    
-                    <div class="price-item column">
-                        <h5 class="underscore">PRICE</h5>
-                        <div class="purchased-item-price">
-                            <h6>$19.99</h6>
-                        </div>
-                        <div class="purchased-item-price">
-                            <h6>$19.99</h6>
-                        </div>
+                    <span class="cart-price cart-column">$19.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
                     </div>
-                    
-                    <div class="quantity-item column">
-                        <h5 class="underscore">QUANTITY</h5>
-                        <div class="quantity">
-                            <div class="cont">
-                                <input type="text" name="" id="cart-quantity">
-                                <button class="btn">REMOVE</button>
-                            </div>
-                            <div class="quantity">
-                                <div class="cont">
-                                    <input type="text" name="" id="cart-quantity">
-                                    <button class="btn">REMOVE</button>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="100" height="100">
+                        <span class="cart-item-title">Album 3</span>
                     </div>
-                    
-                    
+                    <span class="cart-price cart-column">$9.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="2">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
                 </div>
-                
-                <!-- Section D -->
-                
-                <div class="section-d" id="grid">
-                    
-                </div>
-                
-                <!-- Section E -->
-                
-                <div class="section-e" id="grid">
-                    
-                </div>
-                <div class="total">
-                    <h3>TOTAL:</h3>
-                </div>
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$39.97</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            
             </div>
             
             
             
             
-            <script src="script.js"></script>
+            
         </body>
         </html>
