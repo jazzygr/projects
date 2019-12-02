@@ -1,0 +1,32 @@
+$colors: (
+    primary: pink,
+    accent: rgb(223, 247, 138)
+);
+
+body, html {
+    height: 100%;
+}
+@function color($color-name){
+    @return map-get($colors, $color-name)
+};
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+
+    #bg{
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        background-color: color(accent);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+};
+
+li, ul {
+    color: color(primary);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
