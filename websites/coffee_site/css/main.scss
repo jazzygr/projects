@@ -1,0 +1,227 @@
+/*========================================================================== 
+Fonts and Colors
+========================================================================== */
+$main-font:'Baskervville', serif;
+$content-font:  'Montserrat', sans-serif;
+
+$bg: #542801;
+$hl: rgb(141, 161, 250);
+$sh: rgb(96, 119, 223);
+
+/*========================================================================== 
+BASE STYLES
+========================================================================== */
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f2f6f9;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+ul, li {
+    list-style: none;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h3{
+    font-family: $main-font;
+}
+
+h4{
+    font-family: $content-font;
+}
+
+.banner{
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/*========================================================================== 
+Section A
+========================================================================== */
+.header{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+
+
+.header ul{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    margin-right:1rem;
+    text-transform: uppercase;
+    font-family: $main-font;
+}
+
+
+/*========================================================================== 
+Section B
+========================================================================== */
+
+.main-content-title{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.main-content-title h3{
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-bottom: .5rem;
+}
+
+.main-content-title h4 {
+    line-height: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.main-content-info{
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    margin-top: -.25rem;
+}
+
+.main-content-text{
+    border: .4rem solid $bg;
+    border-radius: 3px;
+    padding: 0 .7rem;
+    margin: -2rem 0 0 2rem;
+    background-color: white;
+}
+
+.main-content-text h3, p{
+    padding-right: 3rem;
+}
+
+.main-content-text p{
+    font-size: .75rem;
+}
+
+.main-content-text h3{
+    font-size: 1rem;
+}
+
+.main-content-offset-img{
+    margin: 0 2rem 1.8rem -1.3rem;
+}
+
+.coffee{
+    color: $bg;
+}
+
+/*========================================================================== 
+Section C
+========================================================================== */
+.banner, .mailinglist{
+    padding: 2rem 4rem;
+    margin-top: 3rem;
+    font-family: $main-font;
+}
+
+.btn{
+    color: white;
+    background:black;
+    border: white 1px solid;
+    margin-left: -5px;
+    display: inline-block;
+}
+
+.sub-btn, .btn{
+    height: 2rem;
+}
+/*========================================================================== 
+Section D
+========================================================================== */
+.img-gallery{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: "1fr 1fr 1fr 1fr" 33.33vh
+                   "1fr 1fr 1fr 1fr" 33.33vh;
+    
+    
+}
+
+.img-gallery .item{
+        position: relative;
+        background: black;
+
+}
+
+.img-gallery .item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-gallery .item1 {
+    grid-row: span 2;
+}
+
+.img-gallery .item2, .item6, .item8, .item10{ 
+    grid-column: span 2;
+}
+
+.img-gallery .item2{
+    color: whitesmoke;
+    text-align: center;
+}
+
+/*========================================================================== 
+Media queries
+========================================================================== */
+
+@media (max-width:991px) {
+    .img-gallery{
+        width: 100%;
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template: "1fr 1fr 1fr" 180px
+                       "1fr 1fr 1fr" 180px;
+        
+        
+    }
+    .img-gallery .item2{
+        grid-column: span 1;
+    }
+}
+
+@media (max-width:600px) {
+    .img-gallery{
+        width: 100%;
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template: "1fr 1fr" 150px
+                       "1fr 1fr" 150px;
+        
+        
+    }
+    .img-gallery .item2{
+        display: none;
+    }
+
+}
