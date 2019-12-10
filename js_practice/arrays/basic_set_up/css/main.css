@@ -1,0 +1,12 @@
+.section-a {
+  display: -ms-grid;
+  display: grid;
+}
+
+.circle {
+  height: 3rem;
+  width: 3rem;
+  background: red;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=main.css.map */

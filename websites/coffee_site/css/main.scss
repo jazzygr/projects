@@ -191,6 +191,27 @@ Section D
     text-align: center;
 }
 
+.box {
+    animation-name: myanimation;
+    height: 200px;
+    width: 200px;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    // animation-delay: 2s;
+    // animation-direction: reverse;
+    animation-timing-function: linear; //Allows for smoother transitions. Also try ease-in and ease-out
+    animation-fill-mode: forwards; // Animation stays the way it is when it ends rather than jumping back to beginning
+}
+
+
+@keyframes myanimation {
+    0% {background-color: white; transform: translate(0%, 0%); border-radius: 0 0 0 0;} 
+    25% {background-color: red; transform: translate(25%, 25%); border-radius: 25% 25% 25% 25%;}
+    50% {background-color: green; transform: translate(50%, 50%); border-radius: 50% 50% 50% 50%;}
+    75% {background-color: red; transform: translate(25%, 25%); border-radius: 25% 25% 25% 25%;}
+    100% {background-color: white; transform: translate(0%, 0%); border-radius: 0 0 0 0;}
+}
+
 /*========================================================================== 
 Media queries
 ========================================================================== */
