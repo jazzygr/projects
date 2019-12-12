@@ -1,8 +1,6 @@
-let alertRandom = function (){
-    let randomNumber = Math.floor(Math.random() * 100) + 1;
-    alert(randomNumber);
-};
+let upper = 10000;
+let randomNumber = getRandomNumber(upper);
 
-alertRandom();
-alertRandom();
-alertRandom();
+function getRandomNumber(upper) {
+    return Math.floor(Math.random() * upper ) + 1;
+}
