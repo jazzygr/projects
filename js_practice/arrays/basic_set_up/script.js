@@ -1,6 +1,7 @@
-let upper = 10000;
-let randomNumber = getRandomNumber(upper);
+function isEven(num) {
+    return num % 2 === 0;
+};
 
-function getRandomNumber(upper) {
-    return Math.floor(Math.random() * upper ) + 1;
-}
+isEven(5);
+
+console.log();
