@@ -37,10 +37,6 @@
    * `article` contexts in Chrome, Firefox, and Safari.
    */
   
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-  }
   
   /* Grouping content
      ========================================================================== */
@@ -182,11 +178,6 @@
    * Remove the inheritance of text transform in Edge, Firefox, and IE.
    * 1. Remove the inheritance of text transform in Firefox.
    */
-  
-  button,
-  select { /* 1 */
-    text-transform: none;
-  }
   
   /**
    * Correct the inability to style clickable types in iOS and Safari.

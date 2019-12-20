@@ -1,15 +1,30 @@
+// Base styles //
+
 body{
     background-color:#232323;
 }
 
 h1{
     color: white;
+    text-align: center;
+    background: steelblue;
+    margin: 0;
+    padding: 1.5rem 0;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#colorDisplay {
+    font-size: 200%;
 }
 
 .container{
     max-width: 50%;
-    margin: 0 auto;
+    margin: 15px auto;
 }
+
+//Square styling //
+
 .square{
     width: 30%;
     background: purple;
@@ -17,6 +32,9 @@ h1{
     float: left;
     margin: 1.66%;
     border-radius: 15px;
+    transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
 }
 
 #stripe{
@@ -30,5 +48,29 @@ h1{
 }
 
 .selected {
-    background: blue;
+    color: white;
+    background: steelblue;
+}
+
+//Button //
+
+button {
+    border: none;
+    background: none;
+    height: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: steelblue;
+    transition: all .2s;
+    outline: none;
+}
+
+button:hover{
+    color: white;
+    background: steelblue;
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
 }
